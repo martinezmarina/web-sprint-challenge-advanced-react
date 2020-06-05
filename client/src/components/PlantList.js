@@ -18,7 +18,7 @@ export default class PlantList extends Component {
     .then(res => {
       console.log(res.data.plantsData);
       this.setState({
-        plants:this.state.plants.concat(res.data.plantsData)
+        plants: this.state.plants.concat(res.data.plantsData)
       })
     })
     .catch(err => {
